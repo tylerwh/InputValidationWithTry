@@ -11,6 +11,11 @@ class MyTestCase(unittest.TestCase):
       validation_with_try.average(-1, 1, 1)
 
 
+  def test_average_negative_input_index_one(self):
+    with self.assertRaises(ValueError):
+      validation_with_try.average(90, -90, 99)
+
+
 if __name__ == "__main__":
     unittest.main()
   
