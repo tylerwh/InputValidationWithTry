@@ -5,12 +5,11 @@ Purpose: This program is to demonstrate gathering user input, formatting the dat
 """
 
 
-def average():
+def average(value1, value2, value3):
 
-
-  score1 = float(input("Score 1: "))
-  score2 = float(input("Score 2: "))
-  score3 = float(input("Score 3: "))
+  score1 = float(value1)
+  score2 = float(value2)
+  score3 = float(value3)
 
   
   number_of_tests = 3
@@ -22,12 +21,13 @@ def average():
 if __name__ == "__main__":
     
     
-    first_name = input("Hello, what is your first name? ").capitalize()
-    last_name = input("Your last name? ").capitalize()
-    age = input("And your age: ")
-    print(f'{first_name}' + ", you are now going to enter the score for each of your last three tests.\n")
-    average_scores = average()
-    print("\n" + f'{last_name}' + ", " + f'{first_name}' + " age : " + f'{age}' + " average score: {0:.2f}".format(average_scores))
+    # Commented out for the purpose of testing
+    # first_name = input("Hello, what is your first name? ").capitalize()
+    # last_name = input("Your last name? ").capitalize()
+    # age = input("And your age: ")
+    # print(f'{first_name}' + ", you are now going to enter the score for each of your last three tests.\n")
+    # average_scores = average()
+    # print("\n" + f'{last_name}' + ", " + f'{first_name}' + " age : " + f'{age}' + " average score: {0:.2f}".format(average_scores))
 
 
 # The below table are a series of tests run for average()
