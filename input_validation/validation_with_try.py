@@ -14,6 +14,7 @@ def average(value1, value2, value3):
 
   try:
     assert(score1 >= 0)
+    assert(score2 >= 0)
   except:
     raise ValueError
 
