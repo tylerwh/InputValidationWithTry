@@ -11,6 +11,12 @@ def average(value1, value2, value3):
   score2 = float(value2)
   score3 = float(value3)
 
+
+  try:
+    assert(score1 >= 0)
+  except:
+    raise ValueError
+
   
   number_of_tests = 3
 
