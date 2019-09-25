@@ -31,21 +31,27 @@ if __name__ == "__main__":
   last_name = input("Last name: ")
   age = input("Age: ")
   print("\n" + f'{first_name}' + ", you are now going to enter your test scores.\n\n")
-  score1 = float(input("Score 1: "))
-  score2 = float(input("Score 2: "))
-  score3 = float(input("Score 3: "))
+  # Moved into try/except
+  # score1 = float(input("Score 1: "))
+  # score2 = float(input("Score 2: "))
+  # score3 = float(input("Score 3: "))
 
 
   # Inserted below try/exception to valid input from the console
   try:
+    score1 = float(input("Score 1: "))
     assert(score1 >= 0)
+    score2 = float(input("Score 2: "))
     assert(score2 >= 0)
+    score3 = float(input("Score 3: "))
     assert(score3 >= 0)
+    average_scores = average(score1, score2, score3)
+    print("\n" + f'{last_name}' + ", " + f'{first_name}' + "\nAge : " + f'{age}' + " \nAverage score : {0:.2f}".format(average_scores))
   except:
     raise ValueError
-  
-
-  average_scores = average(score1, score2, score3)
 
 
-  print("\n" + f'{last_name}' + ", " + f'{first_name}' + "\nAge : " + f'{age}' + " \nAverage score : {0:.2f}".format(average_scores))
+  # average_scores = average(score1, score2, score3)
+
+
+  # print("\n" + f'{last_name}' + ", " + f'{first_name}' + "\nAge : " + f'{age}' + " \nAverage score : {0:.2f}".format(average_scores))
